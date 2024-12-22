@@ -1,35 +1,40 @@
 .modal {
-    /* display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8); */
     display: none;
     position: fixed;
     z-index: 1000;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Center the modal */
+
+    left: 0;
+    top: 0;
+    
     width: 100%;
     height: 100%;
-    max-width: 500px; /* Limit the modal width */
-    /* background-color: rgba(0, 0, 0, 0.8); */
     overflow: auto;
-    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+  
+    
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 100%;
+    height: 100%;
+    max-width: 500px;  */
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    /* overflow: auto;
+    padding: 20px; */
 }
 
 .modal-content {
-    margin: 15% auto;
-    padding: 20px;
+    margin: 5% auto;
+    padding: 1rem;
     background: #fff;
     border-radius: 5px;
     width: 80%;
     max-width: 500px;
     text-align: center;
+    display: flex; /* Use Flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
 }
 
 .close {
@@ -51,6 +56,7 @@
     /* width: 100%;
     height: auto;
     margin-bottom: 15px; */
+    
     width: 100%; /* Container will take full width */
     aspect-ratio: 1 / 1; /* Set a square aspect ratio */
     overflow: hidden; /* Clip overflowing content */
